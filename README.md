@@ -4,7 +4,7 @@
 
 A complete interview preparation application built on Cloudflare's edge platform, featuring Workers AI (Llama 3.3), Durable Objects with SQLite, and real-time chat interface.
 
-## 🎯 Features
+## Features
 
 - **LLM Integration**: Powered by Llama 3.3 (70B) on Cloudflare Workers AI
 - **Persistent Memory**: Session-based conversation history stored in Durable Objects with SQLite
@@ -16,7 +16,7 @@ A complete interview preparation application built on Cloudflare's edge platform
 - **Real-time Chat Interface**: Clean, responsive web UI for seamless interaction
 - **Session Management**: Maintains context across multiple conversations
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐
@@ -60,7 +60,7 @@ A complete interview preparation application built on Cloudflare's edge platform
    - Quick prompt suggestions
    - Session management with localStorage
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -110,8 +110,10 @@ A complete interview preparation application built on Cloudflare's edge platform
 
 3. **Access your deployed app**
    - Visit: `https://cf-ai-agent.<your-subdomain>.workers.dev`
+   - Deployed App : `https://cf-ai-agent.niuremanish88.workers.dev`
+   - 
 
-## 📝 API Reference
+## API Reference
 
 ### POST /api/chat
 
@@ -142,7 +144,7 @@ curl -X POST https://your-worker.workers.dev/api/chat \
   }'
 ```
 
-## 🧪 Example Interactions
+## Example Interactions
 
 **Behavioral Questions:**
 ```
@@ -169,7 +171,7 @@ AI: Great! Here's a classic array problem:
     approach (hint: think about hash maps).
 ```
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Runtime**: Cloudflare Workers
 - **AI Model**: Llama 3.3 70B (fp8-fast) via Workers AI
@@ -178,7 +180,7 @@ AI: Great! Here's a classic array problem:
 - **TypeScript**: Full type safety
 - **Build Tool**: Wrangler
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 cf_ai_interview_prep/
@@ -196,14 +198,14 @@ cf_ai_interview_prep/
 └── PROMPTS.md                # AI prompts documentation
 ```
 
-## 🔒 Privacy & Data
+## Privacy & Data
 
 - All conversations are stored in your Cloudflare Durable Objects
 - SessionIDs are generated client-side and stored in localStorage
 - No authentication required (for demo purposes)
 - Each session is isolated and maintains independent conversation history
 
-## 💡 Use Cases
+## Use Cases
 
 - Practice for FAANG internship interviews
 - Prepare behavioral interview answers
@@ -212,21 +214,14 @@ cf_ai_interview_prep/
 - Learn STAR method for behavioral questions
 - Build confidence before actual interviews
 
-## 📖 Learn More
+## Learn More
 
 - [Cloudflare Workers](https://developers.cloudflare.com/workers/)
 - [Durable Objects](https://developers.cloudflare.com/durable-objects/)
 - [Workers AI](https://developers.cloudflare.com/workers-ai/)
 - [Llama 3.3 Model](https://developers.cloudflare.com/workers-ai/models/llama-3.3-70b-instruct-fp8-fast/)
 
-## 🤝 Contributing
 
-This project was built as part of a Cloudflare internship application. Feel free to fork and enhance!
 
-## 📄 License
 
-MIT
-
----
-
-**Built with ❤️ using Cloudflare Workers AI**
+**Built with using Cloudflare Workers AI**
